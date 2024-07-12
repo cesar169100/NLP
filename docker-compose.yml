@@ -1,0 +1,13 @@
+version: '3.9'
+services:
+  etl:
+    build: ./src/etl_pipeline
+    # depends_on:
+    #   - otro_container
+    # environment:
+    #   - AWS_ACCESS_KEY=value1
+  # training:
+  #   build: ./src/training
+  #   depends_on:
+  #     - etl
+    

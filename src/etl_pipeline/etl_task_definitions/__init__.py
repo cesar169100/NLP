@@ -1,0 +1,1 @@
+from .etl_task_definitions import factorial_task, suma_task
