@@ -8,5 +8,7 @@ RUN pip install --no-cache-dir -r /app/requirements.txt
 COPY etl_task_definitions /app/etl_task_definitions
 COPY ETLPipeline /app/ETLPipeline
 COPY main.py /app/main.py
+# Puerto de prefect
+EXPOSE 4200 
 
-CMD [ "python3", "main.py" ]
+CMD prefect server start 
